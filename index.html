@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Real Estate Website" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+    crossorigin="anonymous"/>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <title>Real Estate</title>
+</head>
+<!-- Back to Top Button -->
+<button onclick="scrollToTop()" id="backToTopBtn" title="Back to Top">
+  ↑
+</button>
+<body> 
+<!-- Sticky Navbar -->
+<header style="position: sticky; top: 0; z-index: 999; background-color: #fff; border-bottom: 1px solid #ccc;">
+  <div class="container">
+    <nav class="navbar navbar-expand-md py-3">
+      <div class="container-fluid">
+        <!-- Company Logo / Name -->
+        <div class="company-name">
+          <h5 class="m-0">
+            PrimeNest <span class="Real">Realty</span>
+          </h5>
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Navbar Links -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0 fw-bold">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#shop" class="nav-link">Shop</a></li>
+            <li class="nav-item"><a href="#news" class="nav-link">News</a></li>
+            <li class="nav-item"><a href="#price" class="nav-link">Price</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+
+          <!-- Login/Sign-up Buttons -->
+          <div class="d-flex">
+            <button type="button" class="btn btn-custom-outline me-2">Login</button>
+            <button type="button" class="btn btn-custom">Sign-up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+
+  <!-- Home Section -->
+  <section style="background-color: #f2f6f8;">
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <!-- Hero Image -->
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="img/bud1.png" class="d-block mx-lg-auto img-fluid" alt="Modern Home" width="700" height="500" loading="lazy">
+        </div>
+        <!-- Hero Content -->
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            Find Your Dream Home with PrimeNest <span class="realty-color">Realty</span>
+          </h1>
+          <p class="lead">
+            Discover stunning properties, trusted agents, and the best deals in the city. Whether you're buying, selling, or renting PrimeNest Realty is your partner every step of the way.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-custom btn-lg px-4 me-md-2">
+              Browse Listings
+            </button>
+            <button type="button" class="btn btn-custom-outline btn-lg px-4">
+              Contact Agent
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- About Us -->
+<section id="about">
+  <div class="container px-4 py-5">
+    <div class="row align-items-center g-5">
+      <!-- Image of the Estate -->
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="img/bud2.jpg" class="d-block mx-lg-auto img-fluid" alt="Modern Home" width="400" height="300" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h4 class="text-uppercase mb-2">About   <span class="realty-color">Us</span></h4>
+        <h2 class="fw-bold mb-3">Welcome to PrimeNest  <span class="realty-color">Realty Estate</span></h2>
+        <p>
+          Nestled in a serene, well-planned neighborhood, PrimeNest Estate offers a perfect blend of modern living and natural beauty. Designed with families, professionals, and investors in mind, the estate features beautifully crafted homes, green spaces, and top-notch amenities.
+        </p>
+        <p >
+          With 24/7 security, paved roads, recreational facilities, and close proximity to schools, hospitals, and shopping centers, PrimeNest Estate is not just a place to live — it's a place to thrive.
+        </p>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>✅ Gated community with 24/7 security</li>
+          <li>✅ Smart homes with energy-efficient designs</li>
+          <li>✅ Children's playgrounds & green parks</li>
+          <li>✅ Easy access to major roads and transit</li>
+        </ul>
+        <a href="#" class="btn btn-custom btn-lg">Explore the Estate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stats-section" class="py-5" style="background-color: #f2f6f8;">
+  <div class="container text-center">
+    <div class="row g-4">
+      
+      <!-- Stat Item Example -->
+      <div class="col-6 col-md-3">
+        <div class="mb-2">
+          <div class="mb-2 stat-icon">
+            <i class="bi bi-aspect-ratio-fill"></i>
+          </div>
+        </div>
+        <h3 class="fw-bold count-up" data-target="560">0+</h3>
+        <p class="fw-bold">Total Area Sq</p>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="mb-2">
+          <div class="mb-2 stat-icon">
+            <i class="bi bi-house-fill"></i>
+          </div>
+        </div>
+        <h3 class="fw-bold count-up" data-target="197000">0+</h3>
+        <p class="fw-bold">Apartments Sold</p>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="mb-2">
+          <div class="mb-2 stat-icon">
+            <i class="bi bi-people-fill"></i>
+          </div>
+        </div>
+        <h3 class="fw-bold count-up" data-target="268">0+</h3>
+        <p class="fw-bold">Total Constructions</p>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="mb-2">
+          <div class="mb-2 stat-icon">
+            <i class="bi bi-house-door-fill"></i>
+          </div>
+        </div>
+        <h3 class="fw-bold count-up" data-target="340">0+</h3>
+        <p class="fw-bold">Apartio Rooms</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Shop Section -->
+<section id="shop" style="background-color: #f9f9f9;">
+  <div class="container px-4 py-5">
+    <h2 class="text-center mb-5">Our Properties for <span class="realty-color">Sale</span></h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Property Card 1 -->
+      <div class="col">
+        <div class="card">
+          <img src="img/bud3.jpg" class="card-img-top" alt="Property 1">
+          <div class="card-body">
+            <h5 class="card-title">Luxury Villa</h5>
+            <p class="card-text">A beautiful 5-bedroom villa with a garden and pool.</p>
+            <p class="fw-bold">$2,500,000</p>
+            <a href="#" class="btn btn-custom">View Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- Property Card 2 -->
+      <div class="col">
+        <div class="card">
+          <img src="img/bud4.jpg" class="card-img-top" alt="Property 2">
+          <div class="card-body">
+            <h5 class="card-title">Modern Apartment</h5>
+            <p class="card-text">A cozy 2-bedroom apartment located in the city center.</p>
+            <p class="fw-bold">$800,000</p>
+            <a href="#" class="btn btn-custom">View Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- Property Card 3 -->
+      <div class="col">
+        <div class="card">
+          <img src="img/bud5.jpg" class="card-img-top" alt="Property 3">
+          <div class="card-body">
+            <h5 class="card-title">Suburban Home</h5>
+            <p class="card-text">Spacious home in a family-friendly neighborhood.</p>
+            <p class="fw-bold">$1,200,000</p>
+            <a href="#" class="btn btn-custom">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- News Section -->
+<section id="news" class="py-5" style="background-color: #fff;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h4 class="text-uppercase">Latest <span class="realty-color">News</span></h4>
+      <h2 class="fw-bold">Stay Updated With Our Blog</h2>
+      <p class="text-muted">Get the latest insights and updates from the world of real estate.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- News Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm news-card">
+          <img src="img/bud6.jpg" class="card-img-top" alt="News Image 1">
+          <div class="card-body">
+            <h5 class="card-title">5 Tips for First-Time Home Buyers</h5>
+            <p class="card-text">Buying your first home? Here’s how to navigate the market and avoid common pitfalls.</p>
+            <a href="#" class="btn btn-custom-outline mt-3">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- News Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm news-card">
+          <img src="img/bud7.jpg" class="card-img-top" alt="News Image 2">
+          <div class="card-body">
+            <h5 class="card-title">Real Estate Trends in 2025</h5>
+            <p class="card-text">Discover how the housing market is evolving and what to expect this year.</p>
+            <a href="#" class="btn btn-custom-outline mt-3">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- News Card 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm news-card">
+          <img src="img/bud8.jpg" class="card-img-top" alt="News Image 3">
+          <div class="card-body">
+            <h5 class="card-title">Interior Design Ideas for 2025</h5>
+            <p class="card-text">Modern, minimal, and functional — here’s how to style your dream home this year.</p>
+            <a href="#" class="btn btn-custom-outline mt-3">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Carousel Section -->
+<section id="price" class="py-5" style="background-color: #fff;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h4 class="text-uppercase">Our <span class="realty-color">Plans</span></h4>
+      <h2 class="fw-bold">Flexible Plans That Fit You</h2>
+      <p class="text-muted">Explore our plans — whether you're a buyer, agent, or investor.</p>
+    </div>
+
+    <div id="pricingCarousel" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
+
+      <div class="carousel-inner">
+
+        <!-- Plan 1 -->
+        <div class="carousel-item active">
+          <div class="card pricing-card text-center p-4 mx-auto" style="max-width: 400px;">
+            <h5 class="fw-bold mb-3">Starter</h5>
+            <h2 class="fw-bold">$49 <small class="text-muted">/mo</small></h2>
+            <ul class="list-unstyled my-4">
+              <li>✔ Property Browsing</li>
+              <li>✔ Email Support</li>
+              <li class="text-muted">✘ Listing Access</li>
+              <li class="text-muted">✘ Agent Contact</li>
+            </ul>
+            <a href="#" class="btn btn-custom w-100">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Plan 2 -->
+        <div class="carousel-item">
+          <div class="card pricing-card text-center p-4 mx-auto" style="max-width: 400px;">
+            <h5 class="fw-bold mb-3">Basic</h5>
+            <h2 class="fw-bold">$99 <small class="text-muted">/mo</small></h2>
+            <ul class="list-unstyled my-4">
+              <li>✔ Listings Access</li>
+              <li>✔ Email Support</li>
+              <li>✔ Agent Matching</li>
+              <li class="text-muted">✘ Premium Ads</li>
+            </ul>
+            <a href="#" class="btn btn-custom w-100">Choose Basic</a>
+          </div>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="carousel-item">
+          <div class="card pricing-card text-center p-4 mx-auto border " style="max-width: 400px;">
+            <h5 class="fw-bold mb-3 text-primary">Premium</h5>
+            <h2 class="fw-bold text-primary">$199 <small class="text-muted">/mo</small></h2>
+            <ul class="list-unstyled my-4">
+              <li>✔ All Basic Features</li>
+              <li>✔ Priority Support</li>
+              <li>✔ Featured Listings</li>
+              <li>✔ Premium Ads</li>
+            </ul>
+            <a href="#" class="btn-100 btn-custom-outline">Choose Premium</a>
+          </div>
+        </div>
+
+        <!-- Plan 4 -->
+        <div class="carousel-item">
+          <div class="card pricing-card text-center p-4 mx-auto" style="max-width: 400px;">
+            <h5 class="fw-bold mb-3">Pro</h5>
+            <h2 class="fw-bold">$249 <small class="text-muted">/mo</small></h2>
+            <ul class="list-unstyled my-4">
+              <li>✔ Everything in Premium</li>
+              <li>✔ Personalized Agent</li>
+              <li>✔ Virtual Consultations</li>
+              <li>✔ Social Media Promotion</li>
+            </ul>
+            <a href="#" class="btn btn-custom-outline w-100">Upgrade to Pro</a>
+          </div>
+        </div>
+
+        <!-- Plan 5 -->
+        <div class="carousel-item">
+          <div class="card pricing-card text-center p-4 mx-auto" style="max-width: 400px;">
+            <h5 class="fw-bold mb-3">VIP Elite</h5>
+            <h2 class="fw-bold">$399 <small class="text-muted">/mo</small></h2>
+            <ul class="list-unstyled my-4">
+              <li>✔ Pro Features +</li>
+              <li>✔ Legal & Mortgage Help</li>
+              <li>✔ Private Tours</li>
+              <li>✔ 24/7 Concierge Access</li>
+            </ul>
+            <a href="#" class="btn btn-dark w-100">Go VIP</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Arrows -->
+<button class="carousel-control-prev visible-arrows" type="button" data-bs-target="#pricingCarousel" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+</button>
+<button class="carousel-control-next visible-arrows" type="button" data-bs-target="#pricingCarousel" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+</button>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5" style="background-color: #f2f6f8;">
+  <div class="container px-4">
+    <div class="row text-center mb-5">
+      <h2 class="fw-bold">Get In  <span class="Real">Touch</span></h2>
+      <p class="fw-bold">We love to hear from you! Drop us a message and we'll get back to you shortly.</p>
+    </div>
+
+    <div class="row">
+      <!-- Contact Form -->
+      <div class="col-md-6">
+        <form id="contactForm" action="javascript:void(0);" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" name="name" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" name="email" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
+        </form>
+
+        <!-- Response Message -->
+        <div id="responseMessage" class="mt-4 alert alert-success" style="display: none;">
+          <strong>Thank you!</strong> Your message has been sent. We'll get back to you soon.
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-6">
+        <div class="mb-4">
+          <h4>Our <span class="Real">Location</span></h4>
+          <p>1234 PrimeNest St, Suite 100<br>Realty City, 12345</p>
+        </div>
+
+        <div class="mb-4">
+          <h4>Contact <span class="Real">Us</span></h4>
+          <p><i class="bi bi-envelope-fill"></i> info@primenest.com</p>
+          <p><i class="bi bi-phone-fill"></i> +1 (800) 123-4567</p>
+        </div>
+
+        <div class="mb-4">
+          <h4>Follow <span class="Real">Us</span></h4>
+          <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container text-md-left">
+    <div class="row text-md-left">
+
+      <!-- Company Info -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold ">PrimeNest  <span class="Real">Realty</span></h5>
+        <p>Helping you find the home of your dreams. Professional service, prime locations, and a passion for real estate.</p>
+      </div>
+
+      <!-- Useful Links -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold "> <span class="Real">Links</span></h5>
+        <p><a href="#" class="text-white text-decoration-none">Home</a></p>
+        <p><a href="#about" class="text-white text-decoration-none">About</a></p>
+        <p><a href="#shop" class="text-white text-decoration-none">Shop</a></p>
+        <p><a href="#contact" class="text-white text-decoration-none">Contact</a></p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold "> <span class="Real">Contact</span></h5>
+        <p><i class="bi bi-house-fill me-2"></i> 123 Realty Lane, Prime City</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> info@primenest.com</p>
+        <p><i class="bi bi-telephone-fill me-2"></i> +123 456 7890</p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3 text-center">
+        <h5 class="text-uppercase mb-4 font-weight-bold ">Follow  <span class="Real">Us</span></h5>
+        <a href="#" class="text-white me-4"><i class="bi bi-facebook fs-4"></i></a>
+        <a href="#" class="text-white me-4"><i class="bi bi-twitter fs-4"></i></a>
+        <a href="#" class="text-white me-4"><i class="bi bi-instagram fs-4"></i></a>
+        <a href="#" class="text-white me-4"><i class="bi bi-linkedin fs-4"></i></a>
+      </div>
+
+    </div>
+
+    <hr class="mb-4">
+
+    <div class="row align-items-center text-center">
+      <div class="col-md-12">
+        <p class="mb-0">© 2025 PrimeNest Realty. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="app.js"></script>
+  <!-- Bootstrap JS Bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"
+  ></script>
+
+</body>
+</html>
