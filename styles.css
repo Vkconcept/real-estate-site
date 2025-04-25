@@ -1,0 +1,1239 @@
+
+header {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .company-name{
+  padding-right: 5rem;
+  }
+  .nav-item{
+   font-family: sans-serif;
+   padding: 0.5rem 1rem;
+  
+  }
+  .realty-color {
+      color: #fc5c3c;
+    }
+  .btn-custom-outline {
+      color: #fc5c3c;
+      border-color: #fc5c3c;
+    }
+  
+    .btn-custom-outline:hover {
+      background-color: #fc5c3c;
+      color: #fff;
+    }
+  
+    .btn-custom {
+      background-color: #fc5c3c;
+      border-color: #fc5c3c;
+      color: #fff;
+    }
+  
+    .btn-custom:hover {
+      background-color: #e34e32; 
+      border-color: #e34e32;
+    }
+    .Real{
+      color: #fc5c3c; 
+  
+    }
+    /* Smooth Scroll  */
+  html {
+      scroll-behavior: smooth;
+    }
+  
+  
+      #stats-section {
+          background-color: #f2f6f8;
+        }
+        
+        #stats-section .stat-icon {
+          font-size: 2.5rem;
+          color: #d47955; 
+          margin-bottom: 0.5rem;
+        }
+        
+        #stats-section h3 {
+          font-size: 2rem;
+          margin-bottom: 0.25rem;
+        }
+        
+        #stats-section p {
+          margin-bottom: 0;
+          font-size: 0.95rem;
+        
+        }
+  /* Custom styles for the Shop section */
+  #shop {
+      background-color: #f9f9f9;
+      padding: 50px 0;
+    }
+    
+    /* Card styles */
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    }
+    
+    .card:hover {
+      transform: scale(1.05); /* Slightly enlarge the card */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow to elevate the card */
+    }
+    
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s ease; /* Smooth image transition */
+    }
+    
+    .card:hover .card-img-top {
+      transform: scale(1.1); /* Zoom in the image slightly on hover */
+    }
+    
+    /* Card body text and title styles */
+    .card-body {
+      text-align: center;
+    }
+    
+    .card-title {
+      font-size: 1.5rem;
+      transition: color 0.3s ease; /* Smooth transition for title color */
+    }
+    
+    .card:hover .card-title {
+      color: #fc5c3c; /* Change color on hover */
+    }
+    
+    .card-text {
+      font-size: 1rem;
+      color: #666;
+      transition: color 0.3s ease; /* Smooth transition for text color */
+    }
+    
+    .card:hover .card-text {
+      color: #333; /* Darken the text on hover */
+    }
+    
+    /* Button styles */
+    .btn-custom {
+      background-color:#fc5c3c;
+      color: white;
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for button */
+    }
+    
+    .btn-custom:hover {
+      background-color: #fc5c3c; /* Darker shade on hover */
+      transform: translateY(-3px); /* Slightly lift the button on hover */
+    }
+    
+    /* Optional: Add hover effect for the 'View Details' button */
+    .btn-custom-outline {
+      border: 2px solid #fc5c3c;
+      color: #fc5c3c;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .btn-custom-outline:hover {
+      background-color: #fc5c3c;
+      color: white;
+    }
+    
+    .news-card {
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .news-card:hover {
+      transform: translateY(-5px);
+      background-color: #f9f9f9;
+    }
+  
+    .pricing-card {
+      background-color: #fff;
+      border-radius: 16px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .pricing-card:hover {
+      transform: scale(1.03);
+      background-color: #f9f9f9;
+    }
+    .carousel-control-prev.visible-arrows,
+    .carousel-control-next.visible-arrows {
+      opacity: 1 !important;
+      visibility: visible !important;
+      transition: none;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #e34e32;
+      border-radius: 50%;
+      padding: 1rem;
+    }
+      
+    @keyframes bounceUpDown {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-6px);
+      }
+    }
+    
+    #backToTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 15px;
+      z-index: 100;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      background-color: #e34e32;
+      color: white;
+      cursor: pointer;
+      padding: 10px 14px;
+      border-radius: 50px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      animation: bounceUpDown 2s infinite;
+      transition: background-color 0.3s ease;
+    }
+    
+    #backToTopBtn:hover {
+      background-color: #c43d28;
+    }
+  /* CSS Animation for the Response Message (Pop-up effect) */
+  @keyframes popUpAlert {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    60% {
+      transform: translateY(-10px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  #responseMessage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: #c43d28;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    display: none; 
+    z-index: 1000; 
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  /* Pop-up animation */
+  @keyframes popUpAlert {
+    0% {
+      transform: translate(-50%, -60%);
+      opacity: 0;
+    }
+    60% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+  }
+  
+  /* Fade-out animation */
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .fadeIn {
+    animation: popUpAlert 1s ease-out forwards;
+  }
+  
+  .fadeOut {
+    animation: fadeOut 1s ease-out forwards;
+  }
+  
+  footer a:hover {
+    color: #e34e32;
+    text-decoration: underline;
+  }
+  header {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .company-name{
+  padding-right: 5rem;
+  }
+  .nav-item{
+   font-family: sans-serif;
+   padding: 0.5rem 1rem;
+  
+  }
+  .realty-color {
+      color: #fc5c3c;
+    }
+  .btn-custom-outline {
+      color: #fc5c3c;
+      border-color: #fc5c3c;
+    }
+  
+    .btn-custom-outline:hover {
+      background-color: #fc5c3c;
+      color: #fff;
+    }
+  
+    .btn-custom {
+      background-color: #fc5c3c;
+      border-color: #fc5c3c;
+      color: #fff;
+    }
+  
+    .btn-custom:hover {
+      background-color: #e34e32; 
+      border-color: #e34e32;
+    }
+    .Real{
+      color: #fc5c3c; 
+  
+    }
+    /* Smooth Scroll  */
+  html {
+      scroll-behavior: smooth;
+    }
+  
+  
+      #stats-section {
+          background-color: #f2f6f8;
+        }
+        
+        #stats-section .stat-icon {
+          font-size: 2.5rem;
+          color: #d47955; 
+          margin-bottom: 0.5rem;
+        }
+        
+        #stats-section h3 {
+          font-size: 2rem;
+          margin-bottom: 0.25rem;
+        }
+        
+        #stats-section p {
+margin-bottom: 0;
+font-size: 0.95rem;
+
+}
+/* Custom styles for the Shop section */
+#shop {
+background-color: #f9f9f9;
+padding: 50px 0;
+}
+
+/* Card styles */
+.card {
+transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+transform: scale(1.05); /* Slightly enlarge the card */
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow to elevate the card */
+}
+
+.card-img-top {
+height: 200px;
+object-fit: cover;
+transition: transform 0.3s ease; /* Smooth image transition */
+}
+
+.card:hover .card-img-top {
+transform: scale(1.1); /* Zoom in the image slightly on hover */
+}
+
+/* Card body text and title styles */
+.card-body {
+text-align: center;
+}
+
+.card-title {
+font-size: 1.5rem;
+transition: color 0.3s ease; /* Smooth transition for title color */
+}
+
+.card:hover .card-title {
+color: #fc5c3c; /* Change color on hover */
+}
+
+.card-text {
+font-size: 1rem;
+color: #666;
+transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.card:hover .card-text {
+color: #333; /* Darken the text on hover */
+}
+
+/* Button styles */
+.btn-custom {
+background-color:#fc5c3c;
+color: white;
+transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for button */
+}
+
+.btn-custom:hover {
+background-color: #fc5c3c; /* Darker shade on hover */
+transform: translateY(-3px); /* Slightly lift the button on hover */
+}
+
+/* Optional: Add hover effect for the 'View Details' button */
+.btn-custom-outline {
+border: 2px solid #fc5c3c;
+color: #fc5c3c;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-custom-outline:hover {
+background-color: #fc5c3c;
+color: white;
+}
+
+.news-card {
+transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.news-card:hover {
+transform: translateY(-5px);
+background-color: #f9f9f9;
+}
+
+.pricing-card {
+background-color: #fff;
+border-radius: 16px;
+transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.pricing-card:hover {
+transform: scale(1.03);
+background-color: #f9f9f9;
+}
+.carousel-control-prev.visible-arrows,
+.carousel-control-next.visible-arrows {
+opacity: 1 !important;
+visibility: visible !important;
+transition: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+background-color: #e34e32;
+border-radius: 50%;
+padding: 1rem;
+}
+
+@keyframes bounceUpDown {
+0%, 100% {
+transform: translateY(0);
+}
+50% {
+transform: translateY(-6px);
+}
+}
+
+#backToTopBtn {
+position: fixed;
+bottom: 20px;
+right: 15px;
+z-index: 100;
+font-size: 16px;
+border: none;
+outline: none;
+background-color: #e34e32;
+color: white;
+cursor: pointer;
+padding: 10px 14px;
+border-radius: 50px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+animation: bounceUpDown 2s infinite;
+transition: background-color 0.3s ease;
+}
+
+#backToTopBtn:hover {
+background-color: #c43d28;
+}
+/* CSS Animation for the Response Message (Pop-up effect) */
+@keyframes popUpAlert {
+0% {
+transform: translateY(20px);
+opacity: 0;
+}
+60% {
+transform: translateY(-10px);
+opacity: 1;
+}
+100% {
+transform: translateY(0);
+opacity: 1;
+}
+}
+
+
+#responseMessage {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); 
+background-color: #c43d28;
+color: white;
+padding: 20px;
+border-radius: 5px;
+font-size: 16px;
+font-weight: bold;
+display: none; 
+z-index: 1000; 
+text-align: center;
+max-width: 300px;
+}
+
+/* Pop-up animation */
+@keyframes popUpAlert {
+0% {
+transform: translate(-50%, -60%);
+opacity: 0;
+}
+60% {
+transform: translate(-50%, -50%);
+opacity: 1;
+}
+100% {
+transform: translate(-50%, -50%);
+opacity: 1;
+}
+}
+
+/* Fade-out animation */
+@keyframes fadeOut {
+0% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+}
+}
+
+.fadeIn {
+animation: popUpAlert 1s ease-out forwards;
+}
+
+.fadeOut {
+animation: fadeOut 1s ease-out forwards;
+}
+
+footer a:hover {
+color: #e34e32;
+text-decoration: underline;
+}
+
+/* Tablet & Up: 700px to 991px */
+
+/* Hero Section */
+@media (min-width: 700px) and (max-width: 991px) {
+    .hero-text {
+      font-size: 1.75rem; /* Adjust heading size */
+      padding: 20px;
+    }
+  
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Navbar */
+  @media (min-width: 700px) and (max-width: 991px) {
+    .navbar-brand {
+      font-size: 1.5rem; /* Adjust navbar brand size */
+    }
+    
+    .navbar-nav {
+      font-size: 1rem; /* Adjust navbar item font size */
+    }
+  }
+  
+  /* Carousel */
+  @media (min-width: 700px) and (max-width: 991px) {
+    .carousel-item img {
+      max-width: 100%; /* Ensure carousel images fit */
+      height: auto;
+    }
+    
+    .carousel-caption {
+      font-size: 1.25rem; /* Adjust caption size */
+    }
+  }
+  
+  /* Card Layout for Shop Section */
+  @media (min-width: 700px) and (max-width: 991px) {
+    .card {
+      margin-bottom: 20px; /* Spacing between cards */
+    }
+  
+    .row-cols-1, .row-cols-sm-2, .row-cols-md-2, .row-cols-lg-3 {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  
+    .card-body {
+      font-size: 1rem; /* Adjust text size for card content */
+    }
+  }
+  
+  /* General Layout Fixes */
+  @media (min-width: 700px) and (max-width: 991px) {
+    .container {
+      max-width: 90%; /* Limit the width of the container */
+    }
+    
+    .btn-lg {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+    }
+  
+    h1, h2 {
+      font-size: 2rem; /* Adjust heading sizes for tablet */
+    }
+  }
+
+header {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .company-name{
+  padding-right: 5rem;
+  }
+  .nav-item{
+   font-family: sans-serif;
+   padding: 0.5rem 1rem;
+  
+  }
+  .realty-color {
+      color: #fc5c3c;
+    }
+  .btn-custom-outline {
+      color: #fc5c3c;
+      border-color: #fc5c3c;
+    }
+  
+    .btn-custom-outline:hover {
+      background-color: #fc5c3c;
+      color: #fff;
+    }
+  
+    .btn-custom {
+      background-color: #fc5c3c;
+      border-color: #fc5c3c;
+      color: #fff;
+    }
+  
+    .btn-custom:hover {
+      background-color: #e34e32; 
+      border-color: #e34e32;
+    }
+    .Real{
+      color: #fc5c3c; 
+  
+    }
+    /* Smooth Scroll  */
+  html {
+      scroll-behavior: smooth;
+    }
+  
+  
+      #stats-section {
+          background-color: #f2f6f8;
+        }
+        
+        #stats-section .stat-icon {
+          font-size: 2.5rem;
+          color: #d47955; 
+          margin-bottom: 0.5rem;
+        }
+        
+        #stats-section h3 {
+          font-size: 2rem;
+          margin-bottom: 0.25rem;
+        }
+        
+        #stats-section p {
+          margin-bottom: 0;
+          font-size: 0.95rem;
+        
+        }
+  /* Custom styles for the Shop section */
+  #shop {
+      background-color: #f9f9f9;
+      padding: 50px 0;
+    }
+    
+    /* Card styles */
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    }
+    
+    .card:hover {
+      transform: scale(1.05); /* Slightly enlarge the card */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow to elevate the card */
+    }
+    
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s ease; /* Smooth image transition */
+    }
+    
+    .card:hover .card-img-top {
+      transform: scale(1.1); /* Zoom in the image slightly on hover */
+    }
+    
+    /* Card body text and title styles */
+    .card-body {
+      text-align: center;
+    }
+    
+    .card-title {
+      font-size: 1.5rem;
+      transition: color 0.3s ease; /* Smooth transition for title color */
+    }
+    
+    .card:hover .card-title {
+      color: #fc5c3c; /* Change color on hover */
+    }
+    
+    .card-text {
+      font-size: 1rem;
+      color: #666;
+      transition: color 0.3s ease; /* Smooth transition for text color */
+    }
+    
+    .card:hover .card-text {
+      color: #333; /* Darken the text on hover */
+    }
+    
+    /* Button styles */
+    .btn-custom {
+      background-color:#fc5c3c;
+      color: white;
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for button */
+    }
+    
+    .btn-custom:hover {
+      background-color: #fc5c3c; /* Darker shade on hover */
+      transform: translateY(-3px); /* Slightly lift the button on hover */
+    }
+    
+    /* Optional: Add hover effect for the 'View Details' button */
+    .btn-custom-outline {
+      border: 2px solid #fc5c3c;
+      color: #fc5c3c;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .btn-custom-outline:hover {
+      background-color: #fc5c3c;
+      color: white;
+    }
+    
+    .news-card {
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .news-card:hover {
+      transform: translateY(-5px);
+      background-color: #f9f9f9;
+    }
+  
+    .pricing-card {
+      background-color: #fff;
+      border-radius: 16px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .pricing-card:hover {
+      transform: scale(1.03);
+      background-color: #f9f9f9;
+    }
+    .carousel-control-prev.visible-arrows,
+    .carousel-control-next.visible-arrows {
+      opacity: 1 !important;
+      visibility: visible !important;
+      transition: none;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #e34e32;
+      border-radius: 50%;
+      padding: 1rem;
+    }
+      
+    @keyframes bounceUpDown {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-6px);
+      }
+    }
+    
+    #backToTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 15px;
+      z-index: 100;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      background-color: #e34e32;
+      color: white;
+      cursor: pointer;
+      padding: 10px 14px;
+      border-radius: 50px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      animation: bounceUpDown 2s infinite;
+      transition: background-color 0.3s ease;
+    }
+    
+    #backToTopBtn:hover {
+      background-color: #c43d28;
+    }
+  /* CSS Animation for the Response Message (Pop-up effect) */
+  @keyframes popUpAlert {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    60% {
+      transform: translateY(-10px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  #responseMessage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: #c43d28;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    display: none; 
+    z-index: 1000; 
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  /* Pop-up animation */
+  @keyframes popUpAlert {
+    0% {
+      transform: translate(-50%, -60%);
+      opacity: 0;
+    }
+    60% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+  }
+  
+  /* Fade-out animation */
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .fadeIn {
+    animation: popUpAlert 1s ease-out forwards;
+  }
+  
+  .fadeOut {
+    animation: fadeOut 1s ease-out forwards;
+  }
+  
+  footer a:hover {
+    color: #e34e32;
+    text-decoration: underline;
+  }
+  header {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .company-name{
+  padding-right: 5rem;
+  }
+  .nav-item{
+   font-family: sans-serif;
+   padding: 0.5rem 1rem;
+  
+  }
+  .realty-color {
+      color: #fc5c3c;
+    }
+  .btn-custom-outline {
+      color: #fc5c3c;
+      border-color: #fc5c3c;
+    }
+  
+    .btn-custom-outline:hover {
+      background-color: #fc5c3c;
+      color: #fff;
+    }
+  
+    .btn-custom {
+      background-color: #fc5c3c;
+      border-color: #fc5c3c;
+      color: #fff;
+    }
+  
+    .btn-custom:hover {
+      background-color: #e34e32; 
+      border-color: #e34e32;
+    }
+    .Real{
+      color: #fc5c3c; 
+  
+    }
+    /* Smooth Scroll  */
+  html {
+      scroll-behavior: smooth;
+    }
+  
+  
+      #stats-section {
+          background-color: #f2f6f8;
+        }
+        
+        #stats-section .stat-icon {
+          font-size: 2.5rem;
+          color: #d47955; 
+          margin-bottom: 0.5rem;
+        }
+        
+        #stats-section h3 {
+          font-size: 2rem;
+          margin-bottom: 0.25rem;
+        }
+        
+        #stats-section p {
+margin-bottom: 0;
+font-size: 0.95rem;
+
+}
+/* Custom styles for the Shop section */
+#shop {
+background-color: #f9f9f9;
+padding: 50px 0;
+}
+
+/* Card styles */
+.card {
+transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+transform: scale(1.05); /* Slightly enlarge the card */
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow to elevate the card */
+}
+
+.card-img-top {
+height: 200px;
+object-fit: cover;
+transition: transform 0.3s ease; /* Smooth image transition */
+}
+
+.card:hover .card-img-top {
+transform: scale(1.1); /* Zoom in the image slightly on hover */
+}
+
+/* Card body text and title styles */
+.card-body {
+text-align: center;
+}
+
+.card-title {
+font-size: 1.5rem;
+transition: color 0.3s ease; /* Smooth transition for title color */
+}
+
+.card:hover .card-title {
+color: #fc5c3c; /* Change color on hover */
+}
+
+.card-text {
+font-size: 1rem;
+color: #666;
+transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.card:hover .card-text {
+color: #333; /* Darken the text on hover */
+}
+
+/* Button styles */
+.btn-custom {
+background-color:#fc5c3c;
+color: white;
+transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for button */
+}
+
+.btn-custom:hover {
+background-color: #fc5c3c; /* Darker shade on hover */
+transform: translateY(-3px); /* Slightly lift the button on hover */
+}
+
+/* Optional: Add hover effect for the 'View Details' button */
+.btn-custom-outline {
+border: 2px solid #fc5c3c;
+color: #fc5c3c;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-custom-outline:hover {
+background-color: #fc5c3c;
+color: white;
+}
+
+.news-card {
+transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.news-card:hover {
+transform: translateY(-5px);
+background-color: #f9f9f9;
+}
+
+.pricing-card {
+background-color: #fff;
+border-radius: 16px;
+transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.pricing-card:hover {
+transform: scale(1.03);
+background-color: #f9f9f9;
+}
+.carousel-control-prev.visible-arrows,
+.carousel-control-next.visible-arrows {
+opacity: 1 !important;
+visibility: visible !important;
+transition: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+background-color: #e34e32;
+border-radius: 50%;
+padding: 1rem;
+}
+
+@keyframes bounceUpDown {
+0%, 100% {
+transform: translateY(0);
+}
+50% {
+transform: translateY(-6px);
+}
+}
+
+#backToTopBtn {
+position: fixed;
+bottom: 20px;
+right: 15px;
+z-index: 100;
+font-size: 16px;
+border: none;
+outline: none;
+background-color: #e34e32;
+color: white;
+cursor: pointer;
+padding: 10px 14px;
+border-radius: 50px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+animation: bounceUpDown 2s infinite;
+transition: background-color 0.3s ease;
+}
+
+#backToTopBtn:hover {
+background-color: #c43d28;
+}
+/* CSS Animation for the Response Message (Pop-up effect) */
+@keyframes popUpAlert {
+0% {
+transform: translateY(20px);
+opacity: 0;
+}
+60% {
+transform: translateY(-10px);
+opacity: 1;
+}
+100% {
+transform: translateY(0);
+opacity: 1;
+}
+}
+
+
+#responseMessage {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); 
+background-color: #c43d28;
+color: white;
+padding: 20px;
+border-radius: 5px;
+font-size: 16px;
+font-weight: bold;
+display: none; 
+z-index: 1000; 
+text-align: center;
+max-width: 300px;
+}
+
+/* Pop-up animation */
+@keyframes popUpAlert {
+0% {
+transform: translate(-50%, -60%);
+opacity: 0;
+}
+60% {
+transform: translate(-50%, -50%);
+opacity: 1;
+}
+100% {
+transform: translate(-50%, -50%);
+opacity: 1;
+}
+}
+
+/* Fade-out animation */
+@keyframes fadeOut {
+0% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+}
+}
+
+.fadeIn {
+animation: popUpAlert 1s ease-out forwards;
+}
+
+.fadeOut {
+animation: fadeOut 1s ease-out forwards;
+}
+
+footer a:hover {
+color: #e34e32;
+text-decoration: underline;
+}
+
+/* Tablet & Up: 700px to 991px */
+
+/* Hero Section */
+@media (min-width: 700px) and (max-width: 991px) {
+    .hero-text {
+      font-size: 1.75rem; /* Adjust heading size */
+      padding: 20px;
+    }
+  
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Navbar */
+  @media (min-width: 700px) and (max-width: 991px) {
+    .navbar-brand {
+      font-size: 1.5rem; /* Adjust navbar brand size */
+    }
+    
+    .navbar-nav {
+      font-size: 1rem; /* Adjust navbar item font size */
+    }
+  }
+  
+  /* Carousel */
+  @media (min-width: 700px) and (max-width: 991px) {
+    .carousel-item img {
+      max-width: 100%; /* Ensure carousel images fit */
+      height: auto;
+    }
+    
+    .carousel-caption {
+      font-size: 1.25rem; /* Adjust caption size */
+    }
+  }
+  
+  /* Card Layout for Shop Section */
+  @media (min-width: 700px) and (max-width: 991px) {
+    .card {
+      margin-bottom: 20px; /* Spacing between cards */
+    }
+  
+    .row-cols-1, .row-cols-sm-2, .row-cols-md-2, .row-cols-lg-3 {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  
+    .card-body {
+      font-size: 1rem; /* Adjust text size for card content */
+    }
+  }
+  
+  /* General Layout Fixes */
+  @media (min-width: 700px) and (max-width: 991px) {
+    .container {
+      max-width: 90%; /* Limit the width of the container */
+    }
+    
+    .btn-lg {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+    }
+  
+    h1, h2 {
+      font-size: 2rem; /* Adjust heading sizes for tablet */
+    }
+  }
+  
